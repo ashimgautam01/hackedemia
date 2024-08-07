@@ -1,0 +1,7 @@
+Learning Jourey organized by Hackedemia 2024
+
+VCS and python
+>> Day 1-3 as VCS (github and Docker)
+python from Day 4
+
+
