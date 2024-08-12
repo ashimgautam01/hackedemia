@@ -1,35 +1,35 @@
 import pandas as pd
 
-# dict1={
-#     'student':['ram','ashim',"shyam"],
-#     'marks':[80,78,12],
-#     'address':["pokhara","kathmandu","parbat"],
-# }
-# data_frame=pd.DataFrame(dict1)  #convert dictionary into dataframe print in the form of table
+dict1={
+    'student':['ram','ashim',"shyam"],
+    'marks':[80,78,12],
+    'address':["pokhara","kathmandu","parbat"],
+}
+data_frame=pd.DataFrame(dict1)  #convert dictionary into dataframe print in the form of table
 
-# data_frame['age']=[21,15,29]  # adding data to table
+data_frame['age']=[21,15,29]  # adding data to table
 
-# print(data_frame)
+print(data_frame)
 
-# # Removing
-# newframe=data_frame.drop(columns=['marks'])
+# Removing
+newframe=data_frame.drop(columns=['marks'])
 
-# print(newframe)
+print(newframe)
 
 
-# dict1={
-# "question":[],
-# "answer":[]
-# }
-# n=int(input("print number of questions\n"))
-# for i in range(1,n+1):
-#     question=input(f'enter question no {i}\n ')
-#     answer=input(f'enter answer of quesstion {i}\n')
-#     dict1["question"].append(question)
-#     dict1["answer"].append(answer)
+dict1={
+"question":[],
+"answer":[]
+}
+n=int(input("print number of questions\n"))
+for i in range(1,n+1):
+    question=input(f'enter question no {i}\n ')
+    answer=input(f'enter answer of quesstion {i}\n')
+    dict1["question"].append(question)
+    dict1["answer"].append(answer)
 
-# dict_frame=pd.DataFrame(dict1)
-# print(dict_frame)
+dict_frame=pd.DataFrame(dict1)
+print(dict_frame)
 
 n=int(input("enter number of students\n"))
 
