@@ -1,0 +1,17 @@
+here in this we learn about python libraries
+
+like pandas 
+numpy
+sensor torch 
+tensor flow
+pytorch
+keras
+sklearn
+
+
+not all packages install while installing python
+
+-----------------pandas--------------
+    - pandas is equivalnet for to sql for python
+    - table related kam sab yo bata garinxa
+    - suitable for AI works

@@ -95,3 +95,9 @@ while True:
 print(x)    
 dict_4=dict(zip(keys,values))
 print(f'dictionary:{dict_4}')
+
+keylist=["key 1","key 2","key 3"]
+valuelist=["ashim","gautam","don"]
+dict1=dict(zip(keylist,valuelist))
+print(dict1)
+
