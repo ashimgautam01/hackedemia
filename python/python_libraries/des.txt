@@ -15,3 +15,4 @@ not all packages install while installing python
     - pandas is equivalnet for to sql for python
     - table related kam sab yo bata garinxa
     - suitable for AI works
+    - table modify save and all works related to table
