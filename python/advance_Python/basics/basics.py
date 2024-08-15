@@ -95,10 +95,13 @@ df = pd.DataFrame({
 
 print(df)
 
+
 # map function
 # link or associate
 # simply map one by one faster way to do the same task
 # in map filter and reduce (function_name,iterable)
+
+# syntax map(function_name,iterable)
 
 list1=[3,4,1,2,3,4]
 output=list(map(lambda x:x*x,list1))
@@ -130,8 +133,8 @@ for i in range(0,n):
 
 print(list(map(check_10,list1,list2)))
         
-#Filters
-
+#                                           Filters
+#Syntax filter(function_name,iterable)
 numbers_=[1,2,3,4,50]
 print(list(filter(lambda x:x%2==0,numbers_)))
 
@@ -145,6 +148,8 @@ print(list(filter(length,list_)))
 
 
 # Reduce
+# syntax reduce(function_name,iterable)
+
 from functools import reduce
 
 
