@@ -220,3 +220,9 @@ print(function_substraction('7','10'))
 print(function_addition('7','10'))
 print(function_devision('7','10'))
 print(function_multiplication('7','10'))
+
+
+
+
+
+
