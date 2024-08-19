@@ -1,57 +1,59 @@
 ## class collection of data member and member function
 
 
-class Animal:
-    def What_To_Do(self,flag):
-        if flag.lower() == "bark":
-            print("It is a dog")
-        elif flag.lower() == "meow":
-            print("It is a cat")
-        else:
-            print("It Talks")
+# class Animal:
+#     def What_To_Do(self,flag):
+#         if flag.lower() == "bark":
+#             print("It is a dog")
+#         elif flag.lower() == "meow":
+#             print("It is a cat")
+#         else:
+#             print("It Talks")
 
-species_1=Animal()
-species_1.What_To_Do("bark")
-species_2=Animal()
-species_2.What_To_Do("mew")
-x=7
-y=8
+# species_1=Animal()
+# species_1.What_To_Do("bark")
+# species_2=Animal()
+# species_2.What_To_Do("mew")
+# x=7
+# y=8
 
-class Calculator:
-    def Addition(x,y):
-        print(f'{x}+{y}={x+y}')
-    def Substraction(x,y):
-        print(f'{x}-{y}={x-y}')
+# class Calculator:
+#     def Addition(x,y):
+#         print(f'{x}+{y}={x+y}')
+#     def Substraction(x,y):
+#         print(f'{x}-{y}={x-y}')
 
-operation=Calculator
-operation.Addition(x,y)
-operation.Substraction(x,y)
-
-
-class KBC:
-    def __init__(self,username):
-        print(f'welcome{username}')
-
-x=KBC('Ashim')
+# operation=Calculator
+# operation.Addition(x,y)
+# operation.Substraction(x,y)
 
 
-class Animal:
-    def __init__(self):
-        self.name=input("Enter name of animal\n")
-        self.age=int(input("Enter age of animal\n"))
+# class KBC:
+#     def __init__(self,username):
+#         print(f'welcome{username}')
+
+# x=KBC('Ashim')
+
+
+# class Animal:
+#     def __init__(self):
+#         self.name=input("Enter name of animal\n")
+#         self.age=int(input("Enter age of animal\n"))
     
-    def printDetails(self):
-        print(f'Name:{self.name}\nAge: {self.age}')
+#     def printDetails(self):
+#         print(f'Name:{self.name}\nAge: {self.age}')
 
     
-species_1=Animal('Dog',18)
-species_2=Animal('cat',78)
-species_2.printDetails()
-species_1.printDetails()
-newsp=Animal
-newsp.printDetails()
+# species_1=Animal('Dog',18)
+# species_2=Animal('cat',78)
+# species_2.printDetails()
 
-
+User_List={
+    "name":[],
+    "password":[],
+    "mobile":[],
+    "note":[]
+}
 class User:
     def Welcome_User(self):
         print(f'Welcome {self.name}\n')
@@ -70,20 +72,25 @@ class User:
     def Add_Note(self):
         print(f'Hey {self.name} Enter note here\n')
         self.note=input("enter note here\n")
+        User_List["note"].append(self.note)
         print("note added successfully")
     def ViewNote(self):
         print(f'Hey {self.name} Enter note here\n')
-        print(self.note)
+        for item in User_List:
+            print(item.note)
     def Signup(self):
         self.name=input("enter name\n")
         self.password=input("enter password\n")
         self.mobile=int(input("enter mobile"))
-
+        User_List["name"].append(self.name)
+        User_List["password"].append(self.password)
+        User_List["mobile"].append(self.mobile)
     def Login(self):
         user=input("enter username")
         passw=input("enter password")
-        if user==self.name and passw==self.password:
-            self.Welcome_User()
+        if user==User_List["name"]:
+            if passw==User_List["password"]:
+                self.Welcome_User()
         else:    
             print("Invalid Username or Password")
 
@@ -101,4 +108,5 @@ class User:
                 break
 
 user=User()
+
 
