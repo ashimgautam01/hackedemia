@@ -1,11 +1,11 @@
-# x=input("enter your name\n")
+x=input("enter your name\n")
 
-# with open("file.txt",'a') as f:
-#     f.write(' '+x+' ')
-# with open('file.txt','r') as f:
-#     output=f.readlines()
+with open("file.txt",'a') as f:
+    f.write(' '+x+' ')
+with open('file.txt','r') as f:
+    output=f.readlines()
 
-# print(output)
+print(output)
 
 import json
 
