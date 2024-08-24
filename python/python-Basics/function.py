@@ -102,7 +102,17 @@
 # print(dict1)
 
 
-def functionToAdd(x,y):
-    return x+y
+dict1={
+    "name":[],
+    "age":[]
+}
 
-print(functionToAdd(2,5))
+def functionToEnter(x):
+    for i in range(x):
+        nam=input("enter name")
+        ag=int(input("enter age"))
+        dict1["name"].append(nam)
+        dict1["age"].append(ag)
+
+functionToEnter(1)
+print(dict1)
