@@ -48,58 +48,58 @@
 #         print(f'move disk {n} from{sour} to {des}\n')
 #         TOH(n-1,aux,sour,des)
 
-# x=int(input("Enter a number\n"))
-# TOH(x,'A','B','C')
+x=int(input("Enter a number\n"))
+TOH(x,'A','B','C')
 
-# list =[1,2,4,5,7,8]
-# list.insert(3,6)
-# list.remove(4)
-# print(list)
-# def print_even(list):
-#     for i in range(0,len(list)):
-#         if(list[i]%2==0):
-#             print(list[i])
+list =[1,2,4,5,7,8]
+list.insert(3,6)
+list.remove(4)
+print(list)
+def print_even(list):
+    for i in range(0,len(list)):
+        if(list[i]%2==0):
+            print(list[i])
 
-# print_even(list)
+print_even(list)
 
-# dict_1={
-#     "key 1":70,
-#     "key 2":80
-# }
-# print(dict_1)
+dict_1={
+    "key 1":70,
+    "key 2":80
+}
+print(dict_1)
 
-# dict_2={
-#     "key 1":{"key 01":"ashim"},
-#     "key 2":"apple"
-# }
-# print(dict_2)
+dict_2={
+    "key 1":{"key 01":"ashim"},
+    "key 2":"apple"
+}
+print(dict_2)
 
-# key_list={"key 1","key 2","key 3"}
-# value_list={"apple","banana","mango"}
-# dict_3=dict(zip(key_list,value_list))
-# print(dict_3)
+key_list={"key 1","key 2","key 3"}
+value_list={"apple","banana","mango"}
+dict_3=dict(zip(key_list,value_list))
+print(dict_3)
 
-# keys=[]
-# values=[]
-# while True:
-#     x=input("enter a key value\n")
-#     y=input("enter a value\n")
-#     keys.append(x)
-#     values.append(y)
-#     dec=input("do you want to continue if yes type y and n for no\n").lower()
-#     if dec in ('no','n'):
-#         break
-#     else:
-#         continue
+keys=[]
+values=[]
+while True:
+    x=input("enter a key value\n")
+    y=input("enter a value\n")
+    keys.append(x)
+    values.append(y)
+    dec=input("do you want to continue if yes type y and n for no\n").lower()
+    if dec in ('no','n'):
+        break
+    else:
+        continue
     
-# print(x)    
-# dict_4=dict(zip(keys,values))
-# print(f'dictionary:{dict_4}')
+print(x)    
+dict_4=dict(zip(keys,values))
+print(f'dictionary:{dict_4}')
 
-# keylist=["key 1","key 2","key 3"]
-# valuelist=["ashim","gautam","don"]
-# dict1=dict(zip(keylist,valuelist))
-# print(dict1)
+keylist=["key 1","key 2","key 3"]
+valuelist=["ashim","gautam","don"]
+dict1=dict(zip(keylist,valuelist))
+print(dict1)
 
 
 dict1={
