@@ -46,26 +46,41 @@ import json
 #             print('invalid')
 
 
-dictionary={
-    "name":[],
-    "address":[],
-    "mobile":[]
-}
+# dictionary={
+#     "name":[],
+#     "address":[],
+#     "mobile":[]
+# }
 
-print("1 : Write\n")
-print("2 :Read\n")
-choice=int(input("enter 1 or 2\n"))
-if choice==1:
-    user_name=input("enter name\n")
-    user_address=input("enter address\n")
-    user_mobile=input("enter mobile number\n")
-    dictionary["name"].append(user_name)
-    dictionary["address"].append(user_address)
-    dictionary["mobile"].append(user_mobile)
-    with open('new.json','a') as f:
-        json.dump(dictionary,f)
-else:
-    with open('new.json','r') as f:
-        print(json.load(f))
+# print("1 : Write\n")
+# print("2 :Read\n")
+# choice=int(input("enter 1 or 2\n"))
+# if choice==1:
+#     user_name=input("enter name\n")
+#     user_address=input("enter address\n")
+#     user_mobile=input("enter mobile number\n")
+#     dictionary["name"].append(user_name)
+#     dictionary["address"].append(user_address)
+#     dictionary["mobile"].append(user_mobile)
+#     with open('new.json','a') as f:
+#         json.dump(dictionary,f)
+# else:
+#     with open('new.json','r') as f:
+#         print(json.load(f))
 
         
+
+newd={
+    "name":[],
+    "marks":[]
+}
+
+x=int(input("enter number of students"))
+
+for i in range (1,x):
+    name=str(input("enter name"))
+    marks=int(input("enter marks"))
+    newd["name"].append(name)
+    newd["marks"].append(marks)
+
+print(newd)
