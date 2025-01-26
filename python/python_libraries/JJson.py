@@ -70,17 +70,13 @@ import json
 
         
 
-newd={
-    "name":[],
-    "marks":[]
-}
+# new={
+#     "name":["ashim"],
+#     "add":["pokhara"]
+# }
 
-x=int(input("enter number of students"))
-
-for i in range (1,x):
-    name=str(input("enter name"))
-    marks=int(input("enter marks"))
-    newd["name"].append(name)
-    newd["marks"].append(marks)
-
-print(newd)
+# # new["name"]="ram"
+# # new["add"]="beni"
+# new["name"].append("ram")
+# new['add'].append("beni")
+# print(new)
